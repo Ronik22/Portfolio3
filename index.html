@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Ronik Bhattacharjee</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><span class="span-red">RO</span>NIK</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        
+      </ul>
+      
+      <ul id="nav-mobile" class="sidenav">
+        <li><a style="font-family: 'plaster', cursive; font-size: 2em;" href="#"><span class="span-red">RO</span>NIK</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i style="color: #E9103A; font-size: 32px;" class="material-icons">subject</i></a>
+    </div>
+  </nav>
+
+  <div title="Don't Hover, Just Click It" class="action" onclick="actionToggle();">
+    <span><i class="material-icons">phone</i></span>
+    <ul>
+      <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111392.svg" alt="Facebook" width="25px"></li>
+      <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111432.svg" alt="GitHub" width="25px"></li>
+      <li><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384031.svg" alt="Instagram" width="25px"></li>
+      <li><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384030.svg" alt="Linkedin" width="25px"></li>
+    </ul>
+  </div>
+
+  <!-- <div id="mySidenav">
+    <a class="l-github" href="#">
+      <i class="fab fa-github"></i>
+    </a>
+    <a class="l-twitter" href="#">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a class="l-linkedin" href="#">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+
+  </div> -->
+
+  <!-- HERO -->
+  <div id="index-banner">
+    <div class="svg-container">
+      <h1> <span class="span-red">Hel</span>lo<span style="font-family: 'montserrat';">.</span></h1>
+      <!-- <h4 class="">I am Ronik Bhattachajee</h4> -->
+      <!-- <svg class="rotate" width="379" height="378" viewBox="0 0 579 578" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d)">
+        <path d="M288 566C212.944 566 140.962 536.184 87.8888 483.111C34.816 430.038 5 358.056 5 283C5 207.944 34.816 135.962 87.8888 82.8888C140.962 29.816 212.944 -8.95037e-07 288 0L288 16.1666C217.231 16.1666 149.361 44.2793 99.3203 94.3203C49.2793 144.361 21.1666 212.231 21.1666 283C21.1666 353.769 49.2793 421.639 99.3203 471.68C149.361 521.721 217.231 549.833 288 549.833L288 566Z" fill="#141414"/>
+        <path d="M290.146 0.0741882C365.202 0.359082 437.07 30.4481 489.941 83.7219C542.812 136.996 572.355 209.091 572.07 284.146C571.785 359.202 541.696 431.071 488.422 483.941C435.148 536.812 363.054 566.355 287.998 566.07L288.059 549.904C358.827 550.172 426.804 522.317 477.034 472.467C527.265 422.616 555.635 354.853 555.904 284.085C556.172 213.317 528.317 145.341 478.467 95.11C428.616 44.8794 360.853 16.5093 290.085 16.2407L290.146 0.0741882Z" fill="#E9103A"/>
+        <path d="M288 28C355.63 28 420.49 54.866 468.312 102.688C516.134 150.51 543 215.37 543 283C543 350.63 516.134 415.49 468.312 463.312C420.49 511.134 355.63 538 288 538L288 523.433C351.767 523.433 412.922 498.102 458.012 453.012C503.102 407.922 528.433 346.767 528.433 283C528.433 219.233 503.102 158.078 458.012 112.988C412.922 67.8983 351.767 42.5671 288 42.5671L288 28Z" fill="#141414"/>
+        <path d="M286.066 537.933C218.436 537.676 153.679 510.564 106.039 462.561C58.3987 414.559 31.7791 349.597 32.0358 281.967C32.2925 214.337 59.4045 149.58 107.407 101.94C155.41 54.2997 220.372 27.6801 288.002 27.9368L287.947 42.5038C224.18 42.2618 162.929 67.3607 117.669 112.279C72.408 157.198 46.8448 218.256 46.6027 282.022C46.3607 345.789 71.4596 407.039 116.378 452.3C161.297 497.561 222.355 523.124 286.121 523.366L286.066 537.933Z" fill="#E9103A"/>
+        </g>
+        <defs>
+        <filter id="filter0_d" x="0" y="0" width="578.144" height="577.144" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="5"/>
+        <feGaussianBlur stdDeviation="2.5"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+        </defs>
+      </svg>  -->
+    </div>
+      
+    <div class="column-2" style="background-color:#141414;">
+      
+    </div>
+    <div class="column-2" style="background-color:#E9103A;">
+      
+    </div>
+  </div>
+
+  <div class="scroll-down">
+    <div class="arrow-div">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="28" viewBox="0 0 20 5"><path fill="white" class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path></svg>
+    </div>
+    <div>Scroll</div>
+  </div>
+
+  <!-- <div style="margin-top:40px;">
+    <div class="">
+      <div class="carousel carousel-slider center">
+        <div class="carousel-item red white-text" href="#one!">
+          <img src="./assets/background2.jpg" alt="">
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+          <img src="./assets/background3.jpg" alt="">
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <img src="./assets/background1.jpg" alt="">
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+          <img src="./assets/background2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <!-- ABOUT ME -->
+  <div class="about-me" style="padding-top: 10vh;" >
+    <div  class="container">
+      <div class="section">
+        <div class="row">
+          <div style="margin-left: 0;" class="col s12 m5">
+              <img style="width: 100%; height:auto" src="./assets/gradient3.png" alt="Ronik">
+          </div>
+          <div class="col s12 m6 right">
+              <h2 class="center red-text mysec-title"><span class="black-text">Abo</span>ut Me</h2>
+              <br>
+              <p style="font-weight: 600; font-family: 'raleway'; font-size: 1.2em;">
+                I am an Undergraduate at RCCIIT, India, majoring in Information Technology. I am passionate about web development, and I love how the field is almost all-encompassing. I enjoy learning, and I am always curious about things. Being a detailed oriented person, I keep my goals and tasks organized to maintain productivity.
+                <br><br>
+                Nowadays, I am spending most of my time experimenting with Django and OpenCV. Also, I read Tech articles, watch movies and play games in my free time.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./assets/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./assets/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
