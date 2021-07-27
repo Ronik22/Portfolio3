@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Plaster&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -10,28 +14,45 @@ body {
   font-family: 'Raleway', sans-serif; 
 */
 
-.container{
+/* .container{
   width: 95%;
-}
+} */
 
 #logo-container{
   font-family: 'Plaster', cursive;
 }
 
 nav {
-  position: fixed;
+  position: fixed !important;
   z-index: 999;
   top: 0;
   width: 100%;
+  box-shadow: 0px 2px 5px -2.5px #000 ;
 }
 
-nav ul a,
-nav .brand-logo {
+nav ul a {
   color: rgb(0, 0, 0);
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.navbar-toggler, .navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-item:hover > .nav-link{
+  color: #E9103A !important;
+  font-weight: 500;
+}
 
 p {
   line-height: 2rem;
@@ -96,6 +117,10 @@ p {
   color: #E9103A;
 }
 
+.span-black{
+  color: #161616;
+}
+
 .rotate {
   animation: rotation 8s infinite linear;
 }
@@ -112,28 +137,6 @@ p {
 .column-2 {
   flex: 50%;
   padding: 10px;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-
-.parallax-container .section {
-  width: 100%;
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
 }
 
 
@@ -159,7 +162,7 @@ footer.page-footer {
   background-color: #002fff;
 } */
 
-#mySidenav a {
+/* #mySidenav a {
   border: 2px solid white;
   transition: border-radius 0.2s linear 0s;
   transform: rotate(45deg);
@@ -191,7 +194,7 @@ footer.page-footer {
   top: 140px;
   border: 2px solid white;
   border-color: #f4c136; 
-}
+} */
 
 .action {
   position: fixed;
@@ -275,6 +278,8 @@ footer.page-footer {
 .mysec-title{
   font-family: 'Plaster', cursive;
   position: relative;
+  color: #E9103A;
+  font-size: 3em;
 }
 
 .mysec-title::after{
@@ -299,7 +304,7 @@ footer.page-footer {
   left: 40%;
   height: 15px;
   background: linear-gradient(#ff6347,#ff6347) bottom;
-  background-size: 100% 3px;
+  background-size: 100% 2px;
   background-repeat: no-repeat;
 }
 
@@ -312,7 +317,7 @@ footer.page-footer {
 
 
 .about-me {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1)),url("../assets/Waihou.png");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),url("../assets/Waihou.png");
   background-position: center;
   background-size: cover;
 }
@@ -322,7 +327,7 @@ footer.page-footer {
   position: absolute;
   font-weight: 300;
   left: calc(50% - 30px);
-  top: calc(100vh - 12%);
+  top: calc(100vh - 15%);
   
   color: #fff;
   display: flex;
@@ -361,10 +366,6 @@ footer.page-footer {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
   #index-banner .section {
     top: 10%;
   }
@@ -376,10 +377,14 @@ footer.page-footer {
     top: 0;
   }
 
+  .mysec-title {
+    font-size: 2.3em;
+  }
+
   .svg-container h1{
     font-size: 3em;
   }
-  .row{
+  /* .row{
     flex-direction: column;
-  }
+  } */
 }
