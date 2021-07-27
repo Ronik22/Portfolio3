@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Ronik Bhattacharjee</title>
+  <title>Ronik Bhattacharjee | Portfolio</title>
 
   <!-- CSS  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -12,10 +12,29 @@
 </head>
 <body>
 
+  <!-- LOADER -->
+  <div class="loader text-center">
+    <div class="loader-inner">
+        <div class="lds-roller mb-3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h4 class="text-capitalize font-weight-bold">Wait till I feed my Cat</h4>
+    </div>
+  </div>
+
+
+  <!-- NAVBAR -->
   <nav id="logo-container" class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#"><span class="span-red">RO</span>NIK</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a title="Yes, It's my Name" class="navbar-brand" href="#"><span class="span-red">RO</span>NIK</a>
+      <button id="navbtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,7 +49,7 @@
             <a class="nav-link" aria-current="page" href="#aboutMe">About</a>
           </li>
           <li class="nav-item ms-lg-3 ms-0">
-            <a class="nav-link" aria-current="page" href="#">Projects</a>
+            <a class="nav-link" aria-current="page" href="#myProjects">Projects</a>
           </li>
           <li class="nav-item ms-lg-3 ms-0">
             <a class="nav-link" aria-current="page" href="#">Contact</a>
@@ -40,6 +59,8 @@
     </div>
   </nav>
 
+
+  <!-- FIXED SOCIAL BUTTON -->
   <div title="Don't Hover, Just Click It" class="action" onclick="actionToggle();">
     <span><i style="font-size: 0.6em;" class="fas fa-phone-alt"></i></span>
     <ul>
@@ -50,23 +71,11 @@
     </ul>
   </div>
 
-  <!-- <div id="mySidenav">
-    <a class="l-github" href="#">
-      <i class="fab fa-github"></i>
-    </a>
-    <a class="l-twitter" href="#">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a class="l-linkedin" href="#">
-      <i class="fab fa-linkedin-in"></i>
-    </a>
-
-  </div> -->
 
   <!-- HERO -->
   <div id="index-banner">
     <div class="svg-container">
-      <h1> <span class="span-red">Hel</span>lo<span style="font-family: 'montserrat';">.</span></h1>
+      <h1 id="hero-text"><span class="span-red">Hel</span>lo<span style="font-family: 'montserrat';">.</span></h1>
       <!-- <h4 class="">I am Ronik Bhattachajee</h4> -->
       <!-- <svg class="rotate" width="379" height="378" viewBox="0 0 579 578" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d)">
@@ -90,17 +99,18 @@
       </svg>  -->
     </div>
       
-    <div class="column-2" style="background-color:#141414;">
+    <div id="colp1" class="column-2" style="background-color:#141414;">
       
     </div>
-    <div class="column-2" style="background-color:#E9103A;">
+    <div id="colp2" class="column-2" style="background-color:#E9103A;">
       
     </div>
   </div>
 
+  <!-- SCROLL DOWN INDICATOR -->
   <div class="scroll-down">
     <div class="arrow-div">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="28" viewBox="0 0 20 5"><path fill="white" class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="28" viewbox="0 0 20 5"><path fill="white" class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path></svg>
     </div>
     <div>Scroll</div>
   </div>
@@ -130,7 +140,7 @@
 
 
   <!-- PROJECTS -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -167,14 +177,59 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div> -->
+
+
+  <!-- CARDS -->
+  <div id="myProjects" class="py-5 mx-4">
+    <h1 class="text-center span-red mysec-title my-5"><span class="span-black">Pro</span>jects</h1>
+    <br>
+    <div class="row">
+      
+      <div class=" col-lg-6 mb-3">
+        <div class="pcard hover hover-3 text-white"><img src="./assets/Waihou.png" alt="project">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <div class="hover-3-description">
+              <span class="project-titles text-uppercase">Social Networking Website</span> 
+              <ul class="my-4 p-0 text-center project-links">
+                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fab fa-github"></i></a></li>
+                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fas fa-external-link-alt"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-lg-6 mb-3">
+        <div class="pcard hover hover-3 text-white"><img src="./assets/background3.jpg" alt="project">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <div class="hover-3-description">
+              <span class="project-titles text-uppercase">PyPad</span> 
+              <ul class="my-4 p-0 text-center project-links">
+                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fab fa-github"></i></a></li>
+                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fas fa-external-link-alt"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  
 
+  <!-- FOOTER -->
+  <div style="background-color: #E9103A; color: #fff;" class="mt-3 py-3 text-center">
+    Copyright &copy; 2021 - <a style="text-decoration: none; color: #fff;" href="https://github.com/Ronik22">Ronik Bhattacharjee</a>
+  </div>
+  
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./js/anime.min.js"></script>
   <script src="./js/index.js"></script>
 
   </body>
