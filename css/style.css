@@ -28,7 +28,8 @@ nav {
   z-index: 999;
   top: 0;
   width: 100%;
-  box-shadow: 0px 2px 5px -2.5px #000 ;
+  background-color: transparent;
+  /* box-shadow: 0px 2px 5px -5px #000 ; */
 }
 
 nav ul a {
@@ -37,22 +38,90 @@ nav ul a {
   font-weight: 500;
 }
 
-.navbar-brand {
-  font-size: 1.5em;
+.offcanvas-end {
+  width: 100%;
+  height: 100vh;
+  border: 0;
 }
 
-.navbar-toggler, .navbar-toggler:focus {
+.offcanvas-body {
+  /* background-color: #161616; */
+  background-color: #ccc;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 4em;
+  margin: 0;
+}
+
+.navbar-brand {
+  font-family: 'Plaster', cursive;
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+}
+
+.web-title {
+  border: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.btn-bars {
+  color: rgb(0, 0, 0);
+  border: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 2px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.btn, .btn-close, .btn-close:focus, .btn:focus {
   border: none;
   box-shadow: none;
 }
 
 .nav-item {
-  text-align: center;
+  font-size: 3em;
+  line-height: 2em;
+  text-transform: uppercase;
+  /* text-align: center; */
+  /* padding: 0 1rem; */
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  list-style: none;
+  font-family: 'Montserrat';
+  /* transition: all 1s ease-in-out; */
+}
+
+.nav-item a {
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  
 }
 
 .nav-item:hover > .nav-link{
   color: #E9103A !important;
-  font-weight: 500;
 }
 
 p {
@@ -64,7 +133,7 @@ p {
 }
 
 #index-banner{
-  
+  overflow: hidden;
   height: calc(100vh );
   display: flex;
 }
@@ -123,6 +192,10 @@ p {
   color: #161616;
 }
 
+.span-black:hover {
+  color: #161616;
+}
+
 .rotate {
   animation: rotation 8s infinite linear;
 }
@@ -162,8 +235,8 @@ p {
 
 .action {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   width: 50px;
   height: 50px;
   background: #fff;
@@ -281,9 +354,12 @@ p {
 
 
 .about-me {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),url("../assets/Waihou.png");
+  overflow-x: hidden;
+  background-color: #ffffff;
+  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),url("../assets/Waihou.png"); */
   background-position: center;
   background-size: cover;
+  min-height: 100vh;
 }
 
 .scroll-down{
@@ -436,7 +512,7 @@ p {
 /* CARDS */
 
 .pcard {
-  box-shadow: 0px 0px 8px -3px #000;
+  /* box-shadow: 0px 0px 8px -3px #000; */
 }
 
 .hover {
@@ -539,11 +615,22 @@ p {
 
 
 
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width : 992px) {
   #index-banner .section {
     top: 10%;
+  }
+
+  .nav-item {
+    font-size: 2.5em;
+    line-height: 2em;
   }
   
 }
@@ -551,6 +638,11 @@ p {
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+
+  .nav-item {
+    font-size: 1.7em;
+    line-height: 2em;
   }
 
   .mysec-title {
