@@ -3,51 +3,72 @@ $(document).ready(() => {
 		setTimeout(function () {
 			$(".loader").hide(300);
 			$("body").css("overflow", "auto");	
-				var animation1 = anime.timeline();
-				var animation2 = anime.timeline();
-
-				animation1
-				.add({
-					targets: "#colp1",
-					translateY: ['-100vh', 0],
-					easing: "easeInOutSine",
-					duration: 1000,
-				})
-				.add({
-					targets: "#hero-text",
-					scale: [0, 1],
-					duration: 1000,
-					delay: anime.stagger(500, {direction: 'reverse'})
-				})
-				.add({
-					targets: "nav",
-					translateY: ['-100vh', 0],
-					duration: 1000,
-					delay: anime.stagger(500, {direction: 'reverse'})
-				})
-
-				animation2
-				.add({
-					targets: "#colp2",
-					translateY: ['100vh', 0],
-					easing: "easeInOutSine",
-					duration: 1000,
-				})
-				.add({
-					targets: ".scroll-down",
-					translateY: ['100vh', 0],
-					duration: 2000,
-					delay: anime.stagger(500, {direction: 'reverse'})
-				})
-				.add({
-					targets: ".action",
-					scale: [0, 1],
-					duration: 1000,
-					delay: anime.stagger(500, {direction: 'reverse'})
-				})
-
 				
+			var tl = gsap.timeline();
+			var t2 = gsap.timeline();
+
+			tl
+			.from("#colp1", {
+				y: '-100vh',
+				duration: 1
+			})
+			.from("#hero-text", {
+				scale: 0,
+				duration: 1.5,
+				ease: "bounce.out"
+			})
+			.from(".animnav", {
+				y: '-100vh',
+				duration: 1,
+				ease: "elastic.out(1, 0.3)"
+			});
+			
+		
+			t2
+			.from("#colp2", {
+				y: '100vh',
+				duration: 1
+			})
+			.from(".scroll-down", {
+				y: '100vh',
+				duration: 2
+			})
+			.from(".action", {
+				scale: 0,
+				duration: 1,
+				ease: "elastic.out(1, 0.3)"
+			});
+								
+
 		}, 1000);
+
+		
+		// gsap.from(".about-me", {
+		// 	scrollTrigger : {
+		// 		trigger: ".about-me",
+		// 		scrub: 1,
+		// 		end: "top 100px", 
+		// 	},
+		// 	x : -1000,
+		// });
+
+		gsap.from("#about-img", {
+			scrollTrigger : {
+				trigger: "#about-img",
+				scrub: 1,
+				end: "top 100px", 
+			},
+			x : -1000,
+		});
+
+		gsap.from("#about-para", {
+			scrollTrigger : {
+				trigger: "#about-para",
+				scrub: 1,
+				end: "top 100px", 
+			},
+			x : 1000,
+		});
 		
 	});
 });
@@ -56,15 +77,3 @@ $(document).ready(() => {
 function actionToggle() {
 	$(".action").toggleClass("sl-active");
 }
-
-
-var animation3 = anime.timeline();
-animation3
-.add({
-	targets: ".navbar-nav .nav-item",
-	autoplay: false,
-	translateY: [-100, 0],
-	easing: 'easeInOutSine',
-	duration: 1000,
-})
-document.querySelector("#navbtn").onclick = animation3.play;

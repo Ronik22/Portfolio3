@@ -6,8 +6,8 @@
   <title>Ronik Bhattacharjee | Portfolio</title>
 
   <!-- CSS  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
@@ -30,34 +30,36 @@
   </div>
 
 
-  <!-- NAVBAR -->
-  <nav id="logo-container" class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a title="Yes, It's my Name" class="navbar-brand" href="#"><span class="span-red">RO</span>NIK</a>
-      <button id="navbtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav me-auto mb-2 mb-lg-0">
-          
-        </div>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item ms-lg-3 ms-0">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item ms-lg-3 ms-0">
-            <a class="nav-link" aria-current="page" href="#aboutMe">About</a>
-          </li>
-          <li class="nav-item ms-lg-3 ms-0">
-            <a class="nav-link" aria-current="page" href="#myProjects">Projects</a>
-          </li>
-          <li class="nav-item ms-lg-3 ms-0">
-            <a class="nav-link" aria-current="page" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+  <!-- NAV TITLE AND TRIGGER -->
+  <div class="web-title animnav">
+    <a title="Yes, It's my Name" class="navbar-brand" href="#"><span class="span-red">RO</span>NIK</a>
+  </div>
+
+  <button class="btn-bars animnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- OFFCANVAS NAV -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header container">
+      <a id="offcanvasRightLabel" title="Yes, It's my Name" class="navbar-brand span-black" href="#"><span class="span-red">RO</span>NIK</a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-  </nav>
+    <ul class="offcanvas-body">
+        <li class="nav-item container">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item container">
+          <a class="nav-link" aria-current="page" href="#aboutMe">About</a>
+        </li>
+        <li class="nav-item container">
+          <a class="nav-link" aria-current="page" href="#myProjects">Projects</a>
+        </li>
+        <li class="nav-item container">
+          <a class="nav-link" aria-current="page" href="#">Contact</a>
+        </li>
+    </ul>
+  </div>
 
 
   <!-- FIXED SOCIAL BUTTON -->
@@ -108,25 +110,25 @@
   </div>
 
   <!-- SCROLL DOWN INDICATOR -->
-  <div class="scroll-down">
+  <a style="text-decoration: none;" href="#aboutMe" class="scroll-down">
     <div class="arrow-div">
       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="28" viewbox="0 0 20 5"><path fill="white" class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path></svg>
     </div>
     <div>Scroll</div>
-  </div>
+  </a>
 
 
 
   <!-- ABOUT ME -->
-  <div id="aboutMe" class="about-me" style="padding-top: 15vh; padding-bottom: 5vh;" >
+  <div id="aboutMe" class="about-me py-5 px-2" >
     <div class="container">
       <div class="section">
         <div class="row ">
-          <div class="col-sm-12 col-lg-5 me-auto">
-              <img style="width: 100%; height:auto" src="./assets/gradient3.png" alt="Ronik">
+          <div id="about-img" class="col-sm-12 col-lg-5 me-auto">
+              <img style="width: 100%; height:auto" src="./assets/myImg.jpeg" alt="Ronik">
           </div>
-          <div class="col-sm-12 col-lg-6">
-              <h1 class="text-center span-red mysec-title"><span class="span-black">Abo</span>ut Me</h1>
+          <div id="about-para" class="col-sm-12 col-lg-6">
+              <h1 class="text-center span-red mysec-title pt-5 pt-lg-0"><span class="span-black">Abo</span>ut Me</h1>
               <br><br>
               <p style="font-weight: 600; font-family: 'raleway'; color:#000">
                 I am an Undergraduate at RCCIIT, India, majoring in Information Technology. I am passionate about web development, and I love how the field is almost all-encompassing. I enjoy learning, and I am always curious about things. Being a detailed oriented person, I keep my goals and tasks organized to maintain productivity.
@@ -181,12 +183,12 @@
 
 
   <!-- CARDS -->
-  <div id="myProjects" class="py-5 mx-4">
-    <h1 class="text-center span-red mysec-title my-5"><span class="span-black">Pro</span>jects</h1>
-    <br>
-    <div class="row">
+  <div id="myProjects" class="pb-5 ">
+    <!-- <h1 class="text-center span-red mysec-title my-5"><span class="span-black">Pro</span>jects</h1>
+    <br> -->
+    <div style="margin: 0;" class="row">
       
-      <div class=" col-lg-6 mb-3">
+      <div style="padding: 0;" class=" col-md-6">
         <div class="pcard hover hover-3 text-white"><img src="./assets/Waihou.png" alt="project">
           <div class="hover-overlay"></div>
           <div class="hover-3-content px-5 py-4">
@@ -201,7 +203,7 @@
         </div>
       </div>
 
-      <div class=" col-lg-6 mb-3">
+      <div style="padding: 0;" class=" col-md-6">
         <div class="pcard hover hover-3 text-white"><img src="./assets/background3.jpg" alt="project">
           <div class="hover-overlay"></div>
           <div class="hover-3-content px-5 py-4">
@@ -216,9 +218,40 @@
         </div>
       </div>
 
+      <div style="padding: 0;" class=" col-md-6">
+        <div class="pcard hover hover-3 text-white"><img src="./assets/background3.jpg" alt="project">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <div class="hover-3-description">
+              <span class="project-titles text-uppercase">Social Networking Website</span> 
+              <ul class="my-4 p-0 text-center project-links">
+                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fab fa-github"></i></a></li>
+                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fas fa-external-link-alt"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding: 0;" class=" col-md-6">
+        <div class="pcard hover hover-3 text-white"><img src="./assets/background2.jpg" alt="project">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <div class="hover-3-description">
+              <span class="project-titles text-uppercase">Social Networking Website</span> 
+              <ul class="my-4 p-0 text-center project-links">
+                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fab fa-github"></i></a></li>
+                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fas fa-external-link-alt"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
+  
 
   <!-- FOOTER -->
   <div style="background-color: #E9103A; color: #fff;" class="mt-3 py-3 text-center">
@@ -227,9 +260,10 @@
   
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="./js/anime.min.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <script src="./js/index.js"></script>
 
   </body>
