@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Plaster&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* 
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plaster', cursive;
+  font-family: 'Raleway', sans-serif; 
+*/
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,17 +14,69 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   overflow: hidden;
+  cursor: none;
 }
 
-/* 
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Plaster', cursive;
-  font-family: 'Raleway', sans-serif; 
-*/
 
-/* .container{
-  width: 95%;
-} */
+/* CURSOR */
+.cursor {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(255, 0, 0);
+  width: 2rem;
+  height: 2rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  will-change: transform;
+  user-select: none;
+  pointer-events: none;
+  z-index: 999999;
+  mix-blend-mode: difference;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.cursor span {
+  visibility: hidden;
+}
+
+.chover {
+  width: 3.5rem;
+  height: 3.5rem;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: none;
+}
+
+.chover span {
+  visibility: visible;
+}
+
+.cursor2 {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: transparent;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 200ms ease-out;
+}
+
+::selection {
+  color: #fff;
+  background: #4e56ff;
+}
+
+
+#hero-text {
+  /* mix-blend-mode: screen; */
+}
+
+
 
 #logo-container{
   font-family: 'Plaster', cursive;
@@ -137,6 +196,7 @@ p {
   height: calc(100vh );
   display: flex;
 }
+
 
 .svg-container {
   margin-top: 50px;
@@ -354,6 +414,7 @@ p {
 
 
 .about-me {
+  margin-top: 10vh;
   overflow-x: hidden;
   background-color: #ffffff;
   /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),url("../assets/Waihou.png"); */
@@ -361,6 +422,7 @@ p {
   background-size: cover;
   min-height: 100vh;
 }
+
 
 .scroll-down{
   font-size: 0.7em;
@@ -511,9 +573,6 @@ p {
 
 /* CARDS */
 
-.pcard {
-  /* box-shadow: 0px 0px 8px -3px #000; */
-}
 
 .hover {
   overflow: hidden;

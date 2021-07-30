@@ -19,8 +19,8 @@ $(document).ready(() => {
 			})
 			.from(".animnav", {
 				y: '-100vh',
-				duration: 1,
-				ease: "elastic.out(1, 0.3)"
+				duration: 1.2,
+				ease: "elastic.out(1, 0.5)"
 			});
 			
 		
@@ -42,15 +42,6 @@ $(document).ready(() => {
 
 		}, 1000);
 
-		
-		// gsap.from(".about-me", {
-		// 	scrollTrigger : {
-		// 		trigger: ".about-me",
-		// 		scrub: 1,
-		// 		end: "top 100px", 
-		// 	},
-		// 	x : -1000,
-		// });
 
 		gsap.from("#about-img", {
 			scrollTrigger : {
@@ -69,7 +60,64 @@ $(document).ready(() => {
 			},
 			x : 1000,
 		});
+
+		gsap.from(".pcard", {
+			scrollTrigger : {
+				trigger: ".pcard",
+				scrub: 1,
+				end: "20px 80%", 
+			},
+			scale: 0,
+			
+		});
+
+		// //...........class="skewElem"
+		// let proxy = { skew: 0 },
+		// skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), 
+		// clamp = gsap.utils.clamp(-20, 20);  
+		// ScrollTrigger.create({
+		// 	onUpdate: (self) => {
+		// 	let skew = clamp(self.getVelocity() / -300);
+		// 	if (Math.abs(skew) > Math.abs(proxy.skew)) {
+		// 	proxy.skew = skew;
+		// 	gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+		// }
+		// }
+		// });
+		// gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
+
 		
+		document.body.addEventListener("mousemove", evt => {
+			const mouseX = evt.clientX;
+			const mouseY = evt.clientY;
+			
+			gsap.set(".cursor2", {
+			  x: mouseX,
+			  y: mouseY,
+			})
+			gsap.to(".cursor", {
+				x: mouseX,
+				y: mouseY,
+				stagger: -0.1
+			  })
+			
+		})
+
+		$(".pcard").hover(function() {
+			$('.cursor').addClass('chover');
+		}, function() {
+			$('.cursor').removeClass('chover');
+		});
+
+
+
+		$(".nav-link").click(function(event) {
+			event.preventDefault();
+			let redirectlink = $(this).attr('href');
+			$('.offcanvas-end').toggleClass('show')
+			window.location.href = redirectlink;
+		});
+
 	});
 });
 
