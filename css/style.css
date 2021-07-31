@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Plaster&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --color-black: #141414;
+  --color-red: #E9103A;
+}
+
 /* 
   font-family: 'Montserrat', sans-serif;
   font-family: 'Plaster', cursive;
@@ -9,7 +14,29 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: normal;
+  scrollbar-color: #777 #555;
 }
+
+/* Scrollbar */
+
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 166, 0);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(41, 204, 0);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.333);
+}
+
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -25,9 +52,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgb(255, 0, 0);
-  width: 2rem;
-  height: 2rem;
+  background: var(--color-red);
+  width: 3rem;
+  height: 3rem;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   will-change: transform;
@@ -47,6 +74,7 @@ body {
   height: 3.5rem;
   transform: translate(-50%, -50%);
   background: #fff;
+  mix-blend-mode:normal;
   border: none;
 }
 
@@ -68,34 +96,25 @@ body {
 
 ::selection {
   color: #fff;
-  background: #4e56ff;
+  background: var(--color-red);
 }
 
 
 #hero-text {
-  /* mix-blend-mode: screen; */
+  text-align: center;
+  font-size: 7em;  
+  white-space: nowrap; 
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: 'Plaster', cursive;
+  text-transform: uppercase;
 }
-
 
 
 #logo-container{
   font-family: 'Plaster', cursive;
 }
 
-nav {
-  position: fixed !important;
-  z-index: 999;
-  top: 0;
-  width: 100%;
-  background-color: transparent;
-  /* box-shadow: 0px 2px 5px -5px #000 ; */
-}
-
-nav ul a {
-  color: rgb(0, 0, 0);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
 
 .offcanvas-end {
   width: 100%;
@@ -104,15 +123,13 @@ nav ul a {
 }
 
 .offcanvas-body {
-  /* background-color: #161616; */
-  background-color: #ccc;
+  background-color: #292929;
   border-top: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 4em;
   margin: 0;
 }
 
@@ -157,48 +174,47 @@ nav ul a {
 }
 
 .nav-item {
-  font-size: 3em;
+  font-size: 3.2em;
   line-height: 2em;
   text-transform: uppercase;
-  /* text-align: center; */
-  /* padding: 0 1rem; */
   letter-spacing: 0.2em;
-  font-weight: 800;
+  font-weight: 900;
   list-style: none;
   font-family: 'Montserrat';
   /* transition: all 1s ease-in-out; */
 }
 
 .nav-item a {
-  background-color: #565656;
-  color: transparent;
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  background-repeat: repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-size: contain;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+  color: #ffffff;
+  background-image: url('../assets/Reuss.png');
+  white-space: nowrap; 
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
   
-}
-
-.nav-item:hover > .nav-link{
-  color: #E9103A !important;
 }
 
 p {
   line-height: 2rem;
 }
 
-.sidenav-trigger {
-  color: #26a69a;
-}
 
 #index-banner{
   overflow: hidden;
-  height: calc(100vh );
+  height: 100vh;
   display: flex;
 }
 
 
-.svg-container {
+.index-head-container {
   margin-top: 50px;
   height: calc(100vh - 50px);
   width: 100%;
@@ -210,50 +226,16 @@ p {
   text-align: center;
 }
 
-.svg-container h1 {
-  /* text-shadow: 0px 0px 0 rgb(195,-32,0),
-                 1px 1px 0 rgb(168,-59,0),
-                 2px 2px 0 rgb(142,-85,0),
-                 3px 3px  0 rgb(116,-111,0),
-                 4px 4px 3px rgba(51,51,51,0.6),
-                 4px 4px 1px rgba(51,51,51,0.5),
-                 0px 0px 3px rgba(51,51,51,.2); */
-  font-size: 7em;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Plaster', cursive;
-  text-transform: uppercase;
-}
-
-.svg-container h1 span {
-  /* text-shadow: 0px 0px 0 rgb(178,-72,0),
-                 1px 1px 0 rgb(134,-116,0),
-                 2px 2px 0 rgb(91,-159,0),
-                 3px 3px  0 rgb(48,-202,0),
-                 4px 4px 3px rgba(255,0,0,0.6),
-                 4px 4px 1px rgba(255,0,0,0.5),
-                 0px 0px 3px rgba(255,0,0,.2); */
-}
-
-.svg-container h4 {
-  color: #fff;
-  text-shadow: #333333 2px 2px 2px;
-  font-weight: 300;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
-}
-
 .span-red{
-  color: #E9103A;
+  color: var(--color-red);
 }
 
 .span-black{
-  color: #161616;
+  color: var(--color-black);
 }
 
 .span-black:hover {
-  color: #161616;
+  color: var(--color-black);
 }
 
 .rotate {
@@ -312,7 +294,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ff0000;
+  color: var(--color-red);
   font-size: 2em;
   transition: .3s ease-in-out;
 }
@@ -324,9 +306,6 @@ p {
   position: absolute;
   bottom: 55px;
   right: 0px;
-  /* background: #fff; */
-  /* min-width: 250px; */
-  /* padding: 8px; */
   border-radius: 20px;
   opacity: 0;
   visibility: hidden;
@@ -351,7 +330,7 @@ p {
   padding: 7px 0;
   margin-top: 15px;
   background-color: #fff;
-  color: #000;
+  color: var(--color-black);
   transition: all .3s;
 }
 
@@ -362,7 +341,6 @@ p {
 }
 
 .action ul li img {
-  /* margin-right: 15px; */
   opacity: .5;
   transform: scale(.7);
   transition: 0.3s;
@@ -373,10 +351,20 @@ p {
 }
 
 .mysec-title{
-  font-family: 'Plaster', cursive;
-  position: relative;
-  color: #E9103A;
-  font-size: 3em;
+    position: relative;
+    color: var(--color-red);
+    background-image: url('../assets/headingbgin.jpg');
+    background-repeat: repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5em;  
+    font-family: 'Montserrat',sans-serif; 
+    font-weight: 800;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    white-space: nowrap;  
 }
 
 .mysec-title::after{
@@ -388,21 +376,8 @@ p {
     left: 40%;
     height: 15px;
     background: linear-gradient(#ff6347,#ff6347) bottom;
-    background-size: 100% 3px;
+    background-size: 100% 4px;
     background-repeat: no-repeat;
-}
-
-.mysec-title::before{
-  content: "";
-  color: #fff;
-  position: absolute;
-  right: 40%;
-  top: 100%;
-  left: 40%;
-  height: 15px;
-  background: linear-gradient(#ff6347,#ff6347) bottom;
-  background-size: 100% 2px;
-  background-repeat: no-repeat;
 }
 
 .row {
@@ -414,11 +389,13 @@ p {
 
 
 .about-me {
-  margin-top: 10vh;
+  padding-top: 10%;
+  padding-bottom: 10%;
   overflow-x: hidden;
   background-color: #ffffff;
-  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),url("../assets/Waihou.png"); */
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url("https://images.pexels.com/photos/768943/pexels-photo-768943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),url("../assets/pexels-tirachard-kumtanom-733857.jpg");
+  background-position:center;
   background-size: cover;
   min-height: 100vh;
 }
@@ -430,7 +407,6 @@ p {
   font-weight: 300;
   left: calc(50% - 30px);
   top: calc(100vh - 15%);
-  
   color: #fff;
   display: flex;
   align-items: center;
@@ -460,7 +436,6 @@ p {
 
 /* LOADER */
 
-/* Spinner Wrapper */
 .loader {
   width: 100vw;
   height: 100vh;
@@ -476,9 +451,6 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
-/* Spinner */
 
 .loader {
   z-index: 1000;
@@ -501,7 +473,7 @@ p {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #333;
+  background: var(--color-red);
   margin: -3px 0 0 -3px;
 }
 .lds-roller div:nth-child(1) {
@@ -705,10 +677,10 @@ p {
   }
 
   .mysec-title {
-    font-size: 2.3em;
+    font-size: 3em;
   }
 
-  .svg-container h1{
+  #hero-text{
     font-size: 3em;
   }
 
