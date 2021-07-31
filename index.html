@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- META -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Hi, its Ronik Bhattacharjee. This is my Portfolio page." />
+  <link href="./assets/favicon.png" rel="icon">
+	<link href="./assets/" rel="apple-touch-icon">
   <title>Ronik Bhattacharjee | Portfolio</title>
 
   <!-- CSS  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
+
 <body>
 
   <!-- LOADER -->
   <div class="loader text-center">
     <div class="loader-inner">
-        <div class="lds-roller mb-3">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <h4 class="text-capitalize font-weight-bold">Wait till I feed my Cat</h4>
+      <div class="lds-roller mb-3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <h4 class="text-capitalize font-weight-bold">Wait till I feed my Cat</h4>
     </div>
   </div>
 
@@ -41,85 +49,69 @@
     <a title="Yes, It's my Name" class="navbar-brand" href="#"><span class="span-red">RO</span>NIK</a>
   </div>
 
-  <button class="btn-bars animnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+  <button class="btn-bars animnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+    aria-controls="offcanvasRight">
     <i class="fas fa-bars"></i>
   </button>
 
   <!-- OFFCANVAS NAV -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" data-bs-scroll="true" data-bs-backdrop="false">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+    data-bs-scroll="true" data-bs-backdrop="false">
     <div class="offcanvas-header container">
-      <a id="offcanvasRightLabel" title="Yes, It's my Name" class="navbar-brand span-black" href="#"><span class="span-red">RO</span>NIK</a>
-      <button id="navClose" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <a id="offcanvasRightLabel" title="Yes, It's my Name" class="navbar-brand span-black" href="#"><span
+          class="span-red">RO</span>NIK</a>
+      <button id="navClose" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
     </div>
     <ul class="offcanvas-body">
-        <li class="nav-item container">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item container">
-          <a class="nav-link" aria-current="page" href="#aboutMe">About</a>
-        </li>
-        <li class="nav-item container">
-          <a class="nav-link" aria-current="page" href="#myProjects">Projects</a>
-        </li>
-        <li class="nav-item container">
-          <a class="nav-link" aria-current="page" href="#">Contact</a>
-        </li>
+      <li class="nav-item container">
+        <a class="nav-link cursor-change" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item container">
+        <a class="nav-link cursor-change" aria-current="page" href="#aboutMe">About</a>
+      </li>
+      <li class="nav-item container">
+        <a class="nav-link cursor-change" aria-current="page" href="#myProjects">Projects</a>
+      </li>
+      <li class="nav-item container">
+        <a class="nav-link cursor-change" aria-current="page" href="#">Contact</a>
+      </li>
     </ul>
   </div>
 
 
   <!-- FIXED SOCIAL BUTTON -->
-  <div title="Don't Hover, Just Click It" class="action" onclick="actionToggle();">
+  <div class="action" onclick="actionToggle();">
     <span><i style="font-size: 0.6em;" class="fas fa-phone-alt"></i></span>
     <ul>
-      <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111392.svg" alt="Facebook" width="25px"></li>
-      <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111432.svg" alt="GitHub" width="25px"></li>
-      <li><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384031.svg" alt="Instagram" width="25px"></li>
-      <li><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384030.svg" alt="Linkedin" width="25px"></li>
+      <li><i class="fab fa-github"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-linkedin-in"></i></li>
     </ul>
   </div>
 
 
   <!-- HERO -->
   <div id="index-banner">
-    <div class="svg-container">
+    <div class="index-head-container">
       <h1 id="hero-text"><span class="span-red">Hel</span>lo<span style="font-family: 'montserrat';">.</span></h1>
-      <!-- <h1 id="hero-text"><span class="span-red">Hel</span>lo<span style="font-family: 'montserrat';">.</span></h1> -->
-      <!-- <h4 class="">I am Ronik Bhattachajee</h4> -->
-      <!-- <svg class="rotate" width="379" height="378" viewBox="0 0 579 578" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_d)">
-        <path d="M288 566C212.944 566 140.962 536.184 87.8888 483.111C34.816 430.038 5 358.056 5 283C5 207.944 34.816 135.962 87.8888 82.8888C140.962 29.816 212.944 -8.95037e-07 288 0L288 16.1666C217.231 16.1666 149.361 44.2793 99.3203 94.3203C49.2793 144.361 21.1666 212.231 21.1666 283C21.1666 353.769 49.2793 421.639 99.3203 471.68C149.361 521.721 217.231 549.833 288 549.833L288 566Z" fill="#141414"/>
-        <path d="M290.146 0.0741882C365.202 0.359082 437.07 30.4481 489.941 83.7219C542.812 136.996 572.355 209.091 572.07 284.146C571.785 359.202 541.696 431.071 488.422 483.941C435.148 536.812 363.054 566.355 287.998 566.07L288.059 549.904C358.827 550.172 426.804 522.317 477.034 472.467C527.265 422.616 555.635 354.853 555.904 284.085C556.172 213.317 528.317 145.341 478.467 95.11C428.616 44.8794 360.853 16.5093 290.085 16.2407L290.146 0.0741882Z" fill="#E9103A"/>
-        <path d="M288 28C355.63 28 420.49 54.866 468.312 102.688C516.134 150.51 543 215.37 543 283C543 350.63 516.134 415.49 468.312 463.312C420.49 511.134 355.63 538 288 538L288 523.433C351.767 523.433 412.922 498.102 458.012 453.012C503.102 407.922 528.433 346.767 528.433 283C528.433 219.233 503.102 158.078 458.012 112.988C412.922 67.8983 351.767 42.5671 288 42.5671L288 28Z" fill="#141414"/>
-        <path d="M286.066 537.933C218.436 537.676 153.679 510.564 106.039 462.561C58.3987 414.559 31.7791 349.597 32.0358 281.967C32.2925 214.337 59.4045 149.58 107.407 101.94C155.41 54.2997 220.372 27.6801 288.002 27.9368L287.947 42.5038C224.18 42.2618 162.929 67.3607 117.669 112.279C72.408 157.198 46.8448 218.256 46.6027 282.022C46.3607 345.789 71.4596 407.039 116.378 452.3C161.297 497.561 222.355 523.124 286.121 523.366L286.066 537.933Z" fill="#E9103A"/>
-        </g>
-        <defs>
-        <filter id="filter0_d" x="0" y="0" width="578.144" height="577.144" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-        <feOffset dy="5"/>
-        <feGaussianBlur stdDeviation="2.5"/>
-        <feComposite in2="hardAlpha" operator="out"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-        </filter>
-        </defs>
-      </svg>  -->
     </div>
-      
+
     <div id="colp1" class="column-2" style="background-color:#141414;">
-      
+
     </div>
     <div id="colp2" class="column-2" style="background-color:#E9103A;">
-      
+
     </div>
   </div>
 
   <!-- SCROLL DOWN INDICATOR -->
   <a style="text-decoration: none;" href="#aboutMe" class="scroll-down">
     <div class="arrow-div">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="28" viewbox="0 0 20 5"><path fill="white" class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="28" viewbox="0 0 20 5">
+        <path fill="white" class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path>
+      </svg>
     </div>
     <div>Scroll</div>
   </a>
@@ -127,21 +119,50 @@
 
 
   <!-- ABOUT ME -->
-  <div id="aboutMe" class="about-me py-5 px-2" >
+  <div id="aboutMe" class="about-me px-2">
     <div class="container">
       <div class="section">
         <div class="row ">
           <div id="about-img" class="col-sm-12 col-lg-5 me-auto">
-              <img style="width: 100%; height:auto" src="./assets/myImg.jpeg" alt="Ronik">
+            <img style="width: 100%; height:auto" class="rounded-circle" src="./assets/myImg.jpeg" alt="Ronik">
           </div>
           <div id="about-para" class="col-sm-12 col-lg-6">
-              <h1 class="text-center span-red mysec-title pt-5 pt-lg-0"><span class="span-black">Abo</span>ut Me</h1>
+            <h1 class="text-center span-red mysec-title pt-5 pt-lg-0"><span class="span-black">Abo</span>ut Me</h1>
+            <br><br>
+            <p style="font-weight: 500; font-family: 'montserrat'; color:#000">
+              I am an Undergraduate, majoring in Information Technology. I am passionate about web
+              development, and I love how the field is almost all-encompassing. I enjoy learning, and I am always
+              curious about things. Being a detailed oriented person, I keep my goals and tasks organized to maintain
+              productivity.
               <br><br>
-              <p style="font-weight: 600; font-family: 'raleway'; color:#000">
-                I am an Undergraduate at RCCIIT, India, majoring in Information Technology. I am passionate about web development, and I love how the field is almost all-encompassing. I enjoy learning, and I am always curious about things. Being a detailed oriented person, I keep my goals and tasks organized to maintain productivity.
-                <br><br>
-                Nowadays, I am spending most of my time experimenting with Django and OpenCV. Also, I read Tech articles, watch movies and play games in my free time.</p>
-            </div>
+              Nowadays, I am spending most of my time experimenting with Django and OpenCV. Also, I read Tech articles,
+              watch movies and play games in my free time. 
+              <b>Here are some stuffs that I deal with</b> :-
+            </p>
+            <br>
+            <ul class="list-unstyled d-flex flex-wrap text-black">
+              <li class="m-1"><img src="https://img.shields.io/badge/HTML%20-%23F7DF1E.svg?&style=for-the-badge&color=E34F26&logo=html5&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/css%20-%23F7DF1E.svg?&style=for-the-badge&color=5CD8EE&logo=css3&logoColor=black" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/JavaScript%20-%23F7DF1E.svg?&style=for-the-badge&color=F7DF1E&logo=javascript&logoColor=black" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/Python%20-%23F7DF1E.svg?&style=for-the-badge&color=115B9A&logo=python&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/Django%20-%23F7DF1E.svg?&style=for-the-badge&color=0F4B13&logo=django&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/Flask%20-%23F7DF1E.svg?&style=for-the-badge&color=1f0b47&logo=flask&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/Figma%20-%23F7DF1E.svg?&style=for-the-badge&color=A259FF&logo=figma&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/Bootstrap%20-%23F7DF1E.svg?&style=for-the-badge&color=7044A3&logo=bootstrap&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/Sass%20-%23F7DF1E.svg?&style=for-the-badge&color=CD6799&logo=sass&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/SQLite%20-%23F7DF1E.svg?&style=for-the-badge&color=1E4C68&logo=sqlite&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/Git%20-%23F7DF1E.svg?&style=for-the-badge&color=abf&logo=git&logoColor=black" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/GitHub%20-%23F7DF1E.svg?&style=for-the-badge&color=000&logo=github&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/%20-%23F7DF1E.svg?&style=for-the-badge&color=6633ff&logo=c&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/Java%20-%23F7DF1E.svg?&style=for-the-badge&color=8D6748&logo=java&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/Fast%20API%20-%23F7DF1E.svg?&style=for-the-badge&color=009485&logo=fastapi&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/GCP%20-%23F7DF1E.svg?&style=for-the-badge&color=E34133&logo=google%20cloud&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/React%20-%23F7DF1E.svg?&style=for-the-badge&color=61DAFB&logo=react&logoColor=black" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/MongoDB%20-%23F7DF1E.svg?&style=for-the-badge&color=5C9A37&logo=mongodb&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/MySQL%20-%23F7DF1E.svg?&style=for-the-badge&color=1E4C68&logo=mysql&logoColor=white" /></li>
+              <li class="m-1"><img src="https://img.shields.io/badge/jQuery%20-%23F7DF1E.svg?&style=for-the-badge&color=0769AD&logo=jquery&logoColor=white" /></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -149,105 +170,20 @@
 
 
   <!-- PROJECTS -->
-  <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/background3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/background3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/background3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div> -->
-
-
-  <!-- CARDS -->
   <div id="myProjects" class="pb-5 ">
     <h1 class="text-center span-red mysec-title my-5"><span class="span-black">Pro</span>jects</h1>
     <br>
     <div style="margin: 0;" class="row">
-      
-      <div style="padding: 0;" class=" col-md-6">
-        <div class="pcard hover hover-3 text-white"><img src="./assets/Waihou.png" alt="project">
-          <div class="hover-overlay"></div>
-          <div class="hover-3-content px-5 py-4">
-            <div class="hover-3-description">
-              <span class="project-titles text-uppercase">Social Networking Website</span> 
-              <ul class="my-4 p-0 text-center project-links">
-                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fab fa-github"></i></a></li>
-                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fas fa-external-link-alt"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div style="padding: 0;" class=" col-md-6">
-        <div class="pcard hover hover-3 text-white"><img src="./assets/background3.jpg" alt="project">
+        <div class="pcard hover hover-3 text-white cursor-change">
+          <img src="./assets/Waihou.png" alt="project">
           <div class="hover-overlay"></div>
           <div class="hover-3-content px-5 py-4">
             <div class="hover-3-description">
-              <span class="project-titles text-uppercase">PyPad</span> 
+              <span class="project-titles text-uppercase">Social Networking Website</span>
               <ul class="my-4 p-0 text-center project-links">
-                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fab fa-github"></i></a></li>
-                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fas fa-external-link-alt"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="padding: 0;" class=" col-md-6">
-        <div class="pcard hover hover-3 text-white"><img src="./assets/background3.jpg" alt="project">
-          <div class="hover-overlay"></div>
-          <div class="hover-3-content px-5 py-4">
-            <div class="hover-3-description">
-              <span class="project-titles text-uppercase">Social Networking Website</span> 
-              <ul class="my-4 p-0 text-center project-links">
-                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fab fa-github"></i></a></li>
-                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fas fa-external-link-alt"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="padding: 0;" class=" col-md-6">
-        <div class="pcard hover hover-3 text-white"><img src="./assets/background2.jpg" alt="project">
-          <div class="hover-overlay"></div>
-          <div class="hover-3-content px-5 py-4">
-            <div class="hover-3-description">
-              <span class="project-titles text-uppercase">Social Networking Website</span> 
-              <ul class="my-4 p-0 text-center project-links">
-                <li class="list-unstyled d-inline m-2"><a href="#"><i class="fab fa-github"></i></a></li>
+                <li class="list-unstyled d-inline m-2"><a href="https://github.com/Ronik22/PyPad"><i class="fab fa-github"></i></a></li>
                 <li class="list-unstyled d-inline m-2"><a href="#"><i class="fas fa-external-link-alt"></i></a></li>
               </ul>
             </div>
@@ -258,13 +194,20 @@
     </div>
   </div>
 
-  
+
 
   <!-- FOOTER -->
+
   <div style="background-color: #E9103A; color: #fff;" class="mt-3 py-3 text-center">
+    <ul class="list-unstyled container d-flex flex-row justify-content-center text-center text-white">
+      <li class="mx-3"><i class="fab fa-twitter"></i></li>
+      <li class="mx-3"><i class="fab fa-github"></i></li>
+      <li class="mx-3"><i class="fab fa-instagram"></i></li>
+      <li class="mx-3"><i class="fab fa-linkedin-in"></i></li>
+    </ul>
     Copyright &copy; 2021 - <a style="text-decoration: none; color: #fff;" href="https://github.com/Ronik22">Ronik Bhattacharjee</a>
   </div>
-  
+
 
   <!--  Scripts-->
   <script src="./js/jquery-3.6.0.min.js"></script>
@@ -273,5 +216,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <script src="./js/index.js"></script>
 
-  </body>
+</body>
+
 </html>
