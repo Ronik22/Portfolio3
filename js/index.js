@@ -102,9 +102,20 @@ $(document).ready(() => {
 			$(".nav-link").click(function (event) {
 				event.preventDefault();
 				let redirectlink = $(this).attr("href");
-				$(".offcanvas-end").toggleClass("show");
-				window.location.href = redirectlink;
+				setTimeout(() => {
+					window.location.href = redirectlink;
+				}, 1000);
+				$(".nav-toggle").toggleClass("nav-active");
+				$(".navigation").toggleClass("nav-active");			
 			});
+
+
+			$(".nav-toggle").click(function() {
+				$(this).toggleClass("nav-active");
+				$(".navigation").toggleClass("nav-active");
+			});
+
+
 		}, 1000);
 	});
 });
