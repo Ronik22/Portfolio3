@@ -124,8 +124,8 @@ body {
 }
 
 .nav-toggle.nav-active {
-  background-color: rgb(27, 247, 255);
-  color: rgb(0, 0, 0);
+  background-color: rgb(255, 27, 65);
+  color: rgb(255, 255, 255);
 }
 
 .nav-toggle.nav-active i {
@@ -155,7 +155,7 @@ body {
   left: calc(25% * var(--i));
   width: 25%;
   height: 100%;
-  background: #353535;
+  background: #272436;
   transition: 0.25s;
   /* border: 1px solid black; */
   transition-delay: calc(0.25s * var(--i));
@@ -257,7 +257,8 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: #ffffff;
-  background-image: url('../assets/Reuss.png');
+  /* background-image: url('../assets/Reuss.png'); */
+  background-image: url('../assets/Ronchi.jpg');
   white-space: nowrap; 
   letter-spacing: 0.1em;
   font-weight: 700;
@@ -401,7 +402,7 @@ p {
 }
 .action ul li:hover img {  
   opacity: .8;
-  transform: scale(1.0);
+  transform: scale(1);
 }
 
 .mysec-title{
@@ -447,7 +448,7 @@ p {
   padding-bottom: 10%;
   overflow-x: hidden;
   background-color: #ffffff;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url("https://images.pexels.com/photos/768943/pexels-photo-768943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url("https://images.unsplash.com/photo-1518665750801-883c188a660d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"); */
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)),url("../assets/pexels-tirachard-kumtanom-733857.jpg");
   background-position:center;
   background-size: cover;
@@ -631,12 +632,12 @@ p {
 
 .hover-3::after {
   content: '';
-  width: calc(100% - 3rem);
-  height: calc(100% - 3rem);
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
   border: 1px solid #fff;
   position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 1rem;
+  left: 1rem;
   z-index: 90;
   transition: all 0.3s;
   transform: scale(1.1);
@@ -669,7 +670,7 @@ p {
 }
 
 .hover-3:hover img {
-  width: 110%;
+  width: 90%;
 }
 
 .hover-3:hover::after {
